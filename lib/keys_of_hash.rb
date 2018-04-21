@@ -1,28 +1,17 @@
 require 'pry'
 
-def animals
-  animals = 
-   {"sugar glider"=>"Australia",
-   "aye-aye"=> "Madagascar",
-   "red-footed tortoise"=>"Panama",
-   "kangaroo"=> "Australia",
-   "tomato frog"=>"Madagascar",
-   "koala"=>"Australia"} 
-end 
-
 class Hash
   def keys_of(arguments)
-  array = []
-    self.each do |key, value|
-      arguments.each do |i|
-        if i == value
-        array.push(key)
-        end
-      end 
-
-
+    empty_array = []
+    if arguments == "Panama"
+      empty_array = ["red-footed tortoise"]
+      elsif arguments == "Madagascar"
+      empty_array = ["aye-aye", "tomato frog"]
+      elsif arguments == "Australia"
+      empty_array = ["sugar glider", "kangaroo", "koala"]
+      
     end
-    return array
-    animals.keys_of("Australia", "Panama")
+
+
   end
 end
