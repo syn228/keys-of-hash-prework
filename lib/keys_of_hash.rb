@@ -2,14 +2,14 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-     arr = []
+     empty_array = []
     arguments.each do |arg|
       self.each do |key, val|
         if arg == val
-          arr.push(key)
+          empty_array.push(key)
         end
       end
     end
-    arr
+    empty_array
   end
 end
