@@ -23,6 +23,6 @@ class Hash
 
     end
     return array
+    animals.keys_of("Australia", "Panama")
   end
 end
-animals.keys_of("Australia", "Panama")
